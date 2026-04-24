@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VAULT — Personal Finance</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #070a0e; color: #e8e8e8; }
+    header { background: #0f1923; border-bottom: 1px solid #1e2d3d; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 22px; font-weight: 800; color: #ff6b35; letter-spacing: 2px; }
+    nav a { color: #c0c0c0; text-decoration: none; margin-left: 24px; font-size: 14px; }
+    nav a:hover { color: #ff6b35; }
+    .hero { text-align: center; padding: 80px 24px 60px; max-width: 640px; margin: 0 auto; }
+    .app-icon { width: 100px; height: 100px; background: linear-gradient(135deg, #ff6b35, #ff4500); border-radius: 22px; margin: 0 auto 32px; display: flex; align-items: center; justify-content: center; font-size: 48px; box-shadow: 0 20px 60px rgba(255, 107, 53, 0.3); }
+    h1 { font-size: 42px; font-weight: 900; color: #ffffff; margin-bottom: 16px; letter-spacing: -1px; }
+    h1 span { color: #ff6b35; }
+    .subtitle { font-size: 18px; color: #6b7280; margin-bottom: 40px; line-height: 1.6; }
+    .badges { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 60px; }
+    .badge { background: #0f1923; border: 1px solid #1e2d3d; border-radius: 12px; padding: 14px 20px; display: flex; align-items: center; gap: 10px; }
+    .badge .icon { font-size: 20px; }
+    .badge .text { font-size: 13px; color: #c0c0c0; }
+    .badge .text strong { display: block; color: #ffffff; font-size: 14px; }
+    .features { max-width: 900px; margin: 0 auto; padding: 0 24px 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .feature { background: #0f1923; border: 1px solid #1e2d3d; border-radius: 16px; padding: 28px 24px; }
+    .feature .icon { font-size: 28px; margin-bottom: 16px; }
+    .feature h3 { font-size: 16px; font-weight: 700; color: #ffffff; margin-bottom: 10px; }
+    .feature p { font-size: 14px; color: #6b7280; line-height: 1.6; }
+    .cta { text-align: center; padding: 60px 24px; background: #0f1923; border-top: 1px solid #1e2d3d; }
+    .cta h2 { font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 12px; }
+    .cta p { color: #6b7280; margin-bottom: 32px; }
+    .app-store-btn { display: inline-block; background: #ffffff; color: #000000; padding: 14px 28px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 15px; }
+    footer { text-align: center; padding: 32px 24px; color: #4b5563; font-size: 13px; border-top: 1px solid #1e2d3d; }
+    footer a { color: #6b7280; text-decoration: none; margin: 0 12px; }
+    footer a:hover { color: #ff6b35; }
+    @media (max-width: 640px) { .features { grid-template-columns: 1fr; } h1 { font-size: 30px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">VAULT</div>
+    <nav>
+      <a href="/support.html">Support</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="app-icon">🔐</div>
+    <h1>Your finances.<br /><span>Finally under control.</span></h1>
+    <p class="subtitle">VAULT is a personal finance app with AI-powered insights, smart OCR statement imports, and support for 6 languages including Arabic.</p>
+    <div class="badges">
+      <div class="badge"><div class="icon">🤖</div><div class="text"><strong>AI Insights</strong>Daily analysis</div></div>
+      <div class="badge"><div class="icon">📷</div><div class="text"><strong>OCR Import</strong>Scan statements</div></div>
+      <div class="badge"><div class="icon">🌍</div><div class="text"><strong>6 Languages</strong>Including Arabic</div></div>
+      <div class="badge"><div class="icon">💎</div><div class="text"><strong>Wealth Tracking</strong>Stocks & assets</div></div>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="icon">📊</div>
+      <h3>Smart Dashboard</h3>
+      <p>See your income, expenses, and savings at a glance with beautiful charts and real-time tracking.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🔥</div>
+      <h3>Daily Roast</h3>
+      <p>Get a witty, honest AI critique of your spending habits to keep you accountable and entertained.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">📄</div>
+      <h3>Statement Import</h3>
+      <p>Upload your bank statement PDF and our AI extracts all transactions automatically with high accuracy.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">💬</div>
+      <h3>AI Chat</h3>
+      <p>Ask your AI financial assistant anything about your spending, budgets, and financial goals.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">📈</div>
+      <h3>Monthly Reports</h3>
+      <p>Get comprehensive monthly financial reports with category breakdowns and trend analysis.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🔒</div>
+      <h3>Bank-level Security</h3>
+      <p>Your data is encrypted and protected. Biometric authentication keeps your finances private.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Available on the App Store</h2>
+    <p>Free to download. VAULT Pro available via in-app subscription.</p>
+    <a href="#" class="app-store-btn">⬇ Download on the App Store</a>
+  </div>
+
+  <footer>
+    © 2026 VAULT — Personal Finance. All rights reserved.<br /><br />
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Service</a>
+    <a href="/support.html">Support</a>
+  </footer>
+</body>
+</html>
